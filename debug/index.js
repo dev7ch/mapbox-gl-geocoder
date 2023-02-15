@@ -86,7 +86,9 @@ var geocoder = new MapboxGeocoder({
     }
   },
   mapboxgl: mapboxgl,
-  version: 'v5',
+  reverseGeocode: true,
+  flipCoordinates: true,
+  version: 'v6',
 });
 
 map.addControl(geocoder)
